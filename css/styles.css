@@ -3,7 +3,7 @@ body {
     background-color: #fff;
     font-size: 14 px;
 }
- */
+ 
 
 /* забираємо крапки зі списку */
 /* 
@@ -37,7 +37,31 @@ body {
     line-height: 1.14;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.container {
+  outline: 1px solid red;
+
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* heder */
+.header-container {
+  display: flex;
+  align-items: center;
+
+}
+
 .logo {
   color: #000000;
   font-family: 'Raleway';
@@ -45,12 +69,24 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  margin-right: 93px;
+
 }
 .text-logo {
   color: var(--accent-color);
 }
+.site-nav .logo {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .site-nav.list {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav .link:hover,
@@ -58,21 +94,51 @@ body {
   color: var(--accent-color);
 }
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
 
   text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav .nav-item {
+  margin-right: 50px;
+}
+.site-nav .nav-item:last-child {
+  margin-right: 0;
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 .contact {
   list-style: none;
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
+.contact .contact-item {
+  margin-right: 50px;
+}
+.contact .contact-item:last-child {
+  margin-right: 0;
+}
+
 .contact .link {
+  display: block;
   color: var(--primary-text-color);
 
   text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact .link:hover,
 .contact .link:focus {
@@ -203,3 +269,4 @@ line-height: 1.62;
     font-size: 16px;
     line-height: 1.87;
 }
+
